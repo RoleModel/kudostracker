@@ -1,0 +1,3 @@
+== README
+
+## Simple web app to display and keep track of slack kudos mentions
