@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.2.2'
 
 gem 'rails', '4.1.0'
 
@@ -8,6 +9,7 @@ gem 'pg'
 gem 'sass-rails'
 gem 'slim-rails'
 gem 'uglifier', '>= 1.3.0'
+gem 'rails_12factor'
 
 group :development, :test do
   gem 'pry'
