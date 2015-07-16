@@ -16,7 +16,7 @@ class KudosController < ApplicationController
   private
 
   def parsed_kudo
-    /\Ato @(?<recipient>\w+) for (?<reason>.+)\z/.match(params[:text])
+    /\Ato @(?<recipient>[\w\.]+) for (?<reason>.+)\z/.match(params[:text])
   end
 
   def recipient_name
