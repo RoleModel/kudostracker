@@ -1,6 +1,7 @@
 - [x] Detect and track /kudos to <@username>
 - [x] Display basic statistics in web interface
 - [x] Allow a message (/kudos to <@username> for <message>)
+- [ ] Require authentication to view kudos
 - [ ] Allow multiple people in one (/kudos to <@username_list> for <message>)
 - [ ] Post a public message back in the channel
 - [ ] View statistics for each user
