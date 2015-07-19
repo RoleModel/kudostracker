@@ -1,10 +1,11 @@
-h1 Kudos
-
 - @kudos.each do |kudo|
-
-  h3
-    = kudo.author.name
-    |  says: Kudos to 
-    = kudo.recipient.name
-    |  for 
-    = kudo.reason
+  .kudo.well
+    .title
+      h4
+        = kudo.author.name
+        p.time = kudo.created_at.strftime("%I:%M:%S %p")
+    .message.lead
+      | Kudos to 
+      = kudo.recipient.name
+      |  for 
+      = kudo.reason

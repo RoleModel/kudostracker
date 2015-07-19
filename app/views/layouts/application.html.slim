@@ -1,0 +1,24 @@
+html
+  head
+    title Kudostracker
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+  body
+    nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          = link_to 'Kudos Tracker', kudos_path, class: 'navbar-brand'
+
+        .collapse.navbar-collapse#bs-example-navbar-collapse-1
+          ul.nav.navbar-nav
+            li
+              = link_to 'Kudos', kudos_path
+    .container
+      = yield
