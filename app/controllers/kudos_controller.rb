@@ -1,5 +1,6 @@
 class KudosController < ApplicationController
   skip_before_action :verify_authenticity_token, only: [:create]
+  skip_filter :authenticate, only: [:create]
 
   def index
     @kudos = Kudo.all
